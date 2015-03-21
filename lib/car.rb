@@ -1,5 +1,5 @@
 class Car
-  has_one :valet_ticket
+  attr_accessor :valet_ticket
 
   def initialize(license_plate, car_type = gas_powered) # Give car gas car default
     @license_plate = license_plate
@@ -11,6 +11,12 @@ class Car
   end
 
   def park
-    # Park the car in the garage
+    # Park the car in parking spot
+    # Punch in the ticket
+  end
+
+  def leave
+    # Car leaves the garage
+    # Punch out the ticket
   end
 end

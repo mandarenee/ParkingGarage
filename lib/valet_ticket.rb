@@ -1,7 +1,8 @@
 class ValetTicket
-  belongs_to :car
-
   def initialize
+    @time_in
+    @time_out
+    @total_park_time
     # Initialize new valet ticket for the incoming driver's car
   end
 

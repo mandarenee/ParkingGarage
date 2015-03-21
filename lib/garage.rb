@@ -1,5 +1,5 @@
 class Garage
-  has_many :parking_spots
+  attr_accessor :parking_spots
 
   def initialize (parking_spots)
     @parking_spots = parking_spots
